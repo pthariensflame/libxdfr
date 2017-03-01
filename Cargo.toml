@@ -1,0 +1,6 @@
+[package]
+name = "dfraw"
+version = "0.0.0"
+authors = ["Alexander Ronald Altman <alexanderaltman@me.com>"]
+
+[dependencies]

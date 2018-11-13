@@ -3,7 +3,14 @@ name = "xdfr"
 version = "0.0.1"
 authors = ["Alexander Ronald Altman <alexanderaltman@me.com>"]
 edition = "2018"
+description = "Parser and utility code for the general-purpose “XDFR” format."
+repository = "https://github.com/pthariensflame/libdfraw"
+readme = "README.md"
+license = "MIT OR Apache-2.0"
 
-[build-dependencies]
+[badges]
+travis-ci = { repository = "pthariensflame/libdfraw", branch = "master" }
 
-[dependencies]
+[features]
+default = ["std"]
+std = []

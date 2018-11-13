@@ -1,7 +1,9 @@
 [package]
-name = "dfraw"
+name = "xdfr"
 version = "0.0.1"
 authors = ["Alexander Ronald Altman <alexanderaltman@me.com>"]
+edition = "2018"
+
+[build-dependencies]
 
 [dependencies]
-combine = "3.6.2"

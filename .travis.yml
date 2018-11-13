@@ -1,16 +1,12 @@
 language: rust
-
-sudo: false
-
-env:
-  global:
-    - CRATE_NAME=dfraw
-
 rust:
   - stable
   - beta
   - nightly
-
+matrix:
+  allow_failures:
+    - rust: stable
+  fast_finish: true
 os:
   - linux
   - osx

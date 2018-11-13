@@ -1,4 +1,4 @@
-### https://raw.github.com/github/gitignore/48e6581139426a4dfc66f868350188144bb7098f/Global/Archives.gitignore
+### https://raw.github.com/github/gitignore/4a8e0a151becd5ccbb83e4aca6e6c195f3d506fd/Global/Archives.gitignore
 
 # It's better to unpack these files and commit the raw source because
 # git has its own built in compression methods.
@@ -7,17 +7,18 @@
 *.rar
 *.zip
 *.gz
+*.tgz
 *.bzip
 *.bz2
 *.xz
 *.lzma
 *.cab
 
-#packing-only formats
+# Packing-only formats
 *.iso
 *.tar
 
-#package management formats
+# Package management formats
 *.dmg
 *.xpi
 *.gem
@@ -29,7 +30,7 @@
 *.msp
 
 
-### https://raw.github.com/github/gitignore/48e6581139426a4dfc66f868350188144bb7098f/Global/Tags.gitignore
+### https://raw.github.com/github/gitignore/4a8e0a151becd5ccbb83e4aca6e6c195f3d506fd/Global/Tags.gitignore
 
 # Ignore tags created by etags, ctags, gtags (GNU global) and cscope
 TAGS
@@ -50,21 +51,29 @@ cscope.po.out
 
 
 
-### https://raw.github.com/github/gitignore/48e6581139426a4dfc66f868350188144bb7098f/Global/GPG.gitignore
+### https://raw.github.com/github/gitignore/4a8e0a151becd5ccbb83e4aca6e6c195f3d506fd/Global/GPG.gitignore
 
 secring.*
 
 
 
-### https://raw.github.com/github/gitignore/48e6581139426a4dfc66f868350188144bb7098f/Global/Windows.gitignore
+### https://raw.github.com/github/gitignore/4a8e0a151becd5ccbb83e4aca6e6c195f3d506fd/Global/SVN.gitignore
+
+.svn/
+
+
+### https://raw.github.com/github/gitignore/4a8e0a151becd5ccbb83e4aca6e6c195f3d506fd/Global/Windows.gitignore
 
 # Windows thumbnail cache files
 Thumbs.db
 ehthumbs.db
 ehthumbs_vista.db
 
+# Dump file
+*.stackdump
+
 # Folder config file
-Desktop.ini
+[Dd]esktop.ini
 
 # Recycle Bin used on file shares
 $RECYCLE.BIN/
@@ -72,6 +81,7 @@ $RECYCLE.BIN/
 # Windows Installer files
 *.cab
 *.msi
+*.msix
 *.msm
 *.msp
 
@@ -79,7 +89,7 @@ $RECYCLE.BIN/
 *.lnk
 
 
-### https://raw.github.com/github/gitignore/48e6581139426a4dfc66f868350188144bb7098f/Global/Linux.gitignore
+### https://raw.github.com/github/gitignore/4a8e0a151becd5ccbb83e4aca6e6c195f3d506fd/Global/Linux.gitignore
 
 *~
 
@@ -96,15 +106,15 @@ $RECYCLE.BIN/
 .nfs*
 
 
-### https://raw.github.com/github/gitignore/48e6581139426a4dfc66f868350188144bb7098f/Global/macOS.gitignore
+### https://raw.github.com/github/gitignore/4a8e0a151becd5ccbb83e4aca6e6c195f3d506fd/Global/macOS.gitignore
 
-*.DS_Store
+# General
+.DS_Store
 .AppleDouble
 .LSOverride
 
 # Icon must end with two \r
-Icon
-
+Icon
 
 # Thumbnails
 ._*
@@ -126,7 +136,7 @@ Temporary Items
 .apdisk
 
 
-### https://raw.github.com/github/gitignore/48e6581139426a4dfc66f868350188144bb7098f/Global/Emacs.gitignore
+### https://raw.github.com/github/gitignore/4a8e0a151becd5ccbb83e4aca6e6c195f3d506fd/Global/Emacs.gitignore
 
 # -*- mode: gitignore; -*-
 *~
@@ -174,24 +184,33 @@ flycheck_*.el
 # directory configuration
 .dir-locals.el
 
+# network security
+/network-security.data
 
-### https://raw.github.com/github/gitignore/48e6581139426a4dfc66f868350188144bb7098f/Global/Vim.gitignore
 
-# swap
+
+### https://raw.github.com/github/gitignore/4a8e0a151becd5ccbb83e4aca6e6c195f3d506fd/Global/Vim.gitignore
+
+# Swap
 [._]*.s[a-v][a-z]
 [._]*.sw[a-p]
-[._]s[a-v][a-z]
+[._]s[a-rt-v][a-z]
+[._]ss[a-gi-z]
 [._]sw[a-p]
-# session
+
+# Session
 Session.vim
-# temporary
+
+# Temporary
 .netrwhist
 *~
-# auto-generated tag files
+# Auto-generated tag files
 tags
+# Persistent undo
+[._]*.un~
 
 
-### https://raw.github.com/github/gitignore/48e6581139426a4dfc66f868350188144bb7098f/Global/Eclipse.gitignore
+### https://raw.github.com/github/gitignore/4a8e0a151becd5ccbb83e4aca6e6c195f3d506fd/Global/Eclipse.gitignore
 
 
 .metadata
@@ -206,9 +225,6 @@ local.properties
 .loadpath
 .recommenders
 
-# Eclipse Core
-.project
-
 # External tool builders
 .externalToolBuilders/
 
@@ -221,8 +237,8 @@ local.properties
 # CDT-specific (C/C++ Development Tooling)
 .cproject
 
-# JDT-specific (Eclipse Java Development Tools)
-.classpath
+# CDT- autotools
+.autotools
 
 # Java annotation processor (APT)
 .factorypath
@@ -245,13 +261,16 @@ local.properties
 # Code Recommenders
 .recommenders/
 
+# Annotation Processing
+.apt_generated/
+
 # Scala IDE specific (Scala & Java development for Eclipse)
 .cache-main
 .scala_dependencies
 .worksheet
 
 
-### https://raw.github.com/github/gitignore/48e6581139426a4dfc66f868350188144bb7098f/Global/VisualStudioCode.gitignore
+### https://raw.github.com/github/gitignore/4a8e0a151becd5ccbb83e4aca6e6c195f3d506fd/Global/VisualStudioCode.gitignore
 
 .vscode/*
 !.vscode/settings.json
@@ -260,69 +279,14 @@ local.properties
 !.vscode/extensions.json
 
 
-### https://raw.github.com/github/gitignore/48e6581139426a4dfc66f868350188144bb7098f/C.gitignore
-
-# Prerequisites
-*.d
-
-# Object files
-*.o
-*.ko
-*.obj
-*.elf
-
-# Linker output
-*.ilk
-*.map
-*.exp
-
-# Precompiled Headers
-*.gch
-*.pch
-
-# Libraries
-*.lib
-*.a
-*.la
-*.lo
-
-# Shared objects (inc. Windows DLLs)
-*.dll
-*.so
-*.so.*
-*.dylib
-
-# Executables
-*.exe
-*.out
-*.app
-*.i*86
-*.x86_64
-*.hex
-
-# Debug files
-*.dSYM/
-*.su
-*.idb
-*.pdb
-
-# Kernel Module Compile Results
-*.mod*
-*.cmd
-modules.order
-Module.symvers
-Mkfile.old
-dkms.conf
-
-
-### https://raw.github.com/github/gitignore/48e6581139426a4dfc66f868350188144bb7098f/Rust.gitignore
+### https://raw.github.com/github/gitignore/4a8e0a151becd5ccbb83e4aca6e6c195f3d506fd/Rust.gitignore
 
 # Generated by Cargo
 # will have compiled files and executables
 /target/
 
 # Remove Cargo.lock from gitignore if creating an executable, leave it for libraries
-# More information here http://doc.crates.io/guide.html#cargotoml-vs-cargolock
+# More information here https://doc.rust-lang.org/cargo/guide/cargo-toml-vs-cargo-lock.html
 Cargo.lock
 
 # These are backup files generated by rustfmt
